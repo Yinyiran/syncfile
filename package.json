@@ -9,31 +9,31 @@
   },
   "dependencies": {
     "axios": "^0.20.0",
-    "egg": "^2.15.1",
-    "egg-scripts": "^2.11.0",
-    "vue": "^2.6.12"
+    "vue": "^3.0.0-rc.9"
   },
   "devDependencies": {
     "@vue/compiler-sfc": "^3.0.0-rc.9",
     "autod": "^3.0.1",
     "autod-egg": "^1.1.0",
+    "egg": "^2.15.1",
     "egg-bin": "^4.11.0",
     "egg-ci": "^1.11.0",
     "egg-mock": "^3.21.0",
+    "egg-scripts": "^2.11.0",
+    "electron": "^9.2.0",
+    "electron-reload": "^1.5.0",
     "eslint": "^5.13.0",
     "eslint-config-egg": "^7.1.0",
-    "npm-run-all": "^4.1.5",
-    "vite": "^1.0.0-rc.4",
-    "request": "^2.88.2",
     "form-data": "^3.0.0",
-    "electron": "^9.2.0",
-    "electron-reload": "^1.5.0"
+    "npm-run-all": "^4.1.5",
+    "request": "^2.88.2",
+    "vite": "^1.0.0-rc.4"
   },
   "engines": {
     "node": ">=10.0.0"
   },
   "scripts": {
-    "dev": "npm-run-all -p main serve egg",
+    "dev": "npm-run-all -p main serve",
     "main": "electron .",
     "serve": "vite",
     "start": "egg-scripts start --daemon --title=egg-server-syncfile",

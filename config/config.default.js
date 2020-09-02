@@ -20,6 +20,11 @@ module.exports = appInfo => {
 
   // add your user config here
   const userConfig = {
+    security: {
+      csrf: {
+        enable: false
+      },
+    },
     multipart: {
       mode: 'stream',
       autoFields: true,

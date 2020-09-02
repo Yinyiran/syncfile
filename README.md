@@ -4,30 +4,16 @@
 
 ## QuickStart
 
-<!-- add docs here for user -->
-
-see [egg docs][egg] for more detail.
-
-### Development
-
 ```bash
-$ npm i
-$ npm run dev
-$ open http://localhost:7001/
+$ yarn
+$ yarn dev  // 开启前端
+$ VSCode F5 开启调试（或 yarn debug） // 开启egg服务
 ```
 
-### Deploy
-
 ```bash
-$ npm start
-$ npm stop
+点击 "选择上传文件" 按钮，选择文件，就可以上传了
 ```
 
-### npm scripts
-
-- Use `npm run lint` to check code style.
-- Use `npm test` to run unit test.
-- Use `npm run autod` to auto detect dependencies upgrade, see [autod](https://www.npmjs.com/package/autod) for more detail.
-
-
-[egg]: https://eggjs.org
+### 说明
+1. 根据本地文件路径，直接上传文件，是nodejs环境上传文件，不是前端的input file选择文件。
+2. 前端Axios上传文件的参数找了很多种方法，都没有成功，这里只写了一种。
